@@ -1,0 +1,12 @@
+<scene version="3.0.0">
+    <include filename="fragments/base.xml"/>
+    <include filename="fragments/bsdfs-spectral.xml"/>
+    <include filename="fragments/shapes.xml"/>
+    <emitter type="area" id="area-emitter">
+        <spectrum name="radiance" value="150:20, 300:20, 360:1000, 400:0"/>
+    </emitter>
+    <film type='specfilm'>
+        <spectrum name="band1" filename='ultraviolet_srf.spd'/>
+        <spectrum name="band2" filename='red.spd'/>
+    </film>
+</scene>
